@@ -1,0 +1,130 @@
+body{
+  margin:0;
+  }
+  #strip {
+  position:absolute;
+  top:0;
+  background: #37474F;
+  height:20px;
+  width:100%;
+  z-index:99;
+  }
+  header {
+  /*position:absolute;*/
+  top:10;
+  background: #455A64;
+  padding:10px;
+  margin-bottom:10px;
+}
+h1 #title{
+  /*font-family: 'Poiret One', cursive;
+  font-family: 'Arvo', serif;*/
+  font-family: 'Josefin Sans', sans-serif;
+  text-align:center;
+  color:mintcream;
+  font-weight:300;
+  font-size:3em;
+  margin-left:15px;
+}
+h1 {
+  font-family: 'Josefin Sans', sans-serif;
+  text-align:center;
+  font-weight:300;
+  font-size:3em;
+  margin-left:15px;
+}
+h3 {
+    font-family: 'Slabo 27px', serif;
+}
+#globe {
+  /*position:absolute;*/
+  margin:0 auto;
+  height:auto;
+  width:100px;
+  padding:5px;
+  /*background:lightgreen;
+  border-radius: 10% 50%;*/
+}
+hr {
+  width:50%;
+  margin-bottom:20px;
+
+}
+html {
+
+  height:200px;
+  }
+  section {
+  text-align:center;
+  top:200px;
+  height:40px;
+  background:white;
+  margin-bottom:160px;
+}
+p {
+  display:block;
+  margin:0 auto;
+  width:50%;
+  font-family: 'Slabo 27px', serif;
+}
+button {
+  display: inline-block;
+  position:relative;
+  bottom:-10px;
+  padding:1%;
+  margin-bottom:0px;
+  margin: 0 10px 0 0;
+  padding: 5px 15px;
+  font-size: 18px;
+  font-family: "Bitter",serif;
+  line-height: 1.8;
+  border-radius: 0;
+}
+button:focus {
+  outline: none
+}
+section.border button {
+  color: #6496c8;
+  background: rgba(0,0,0,0);
+  border: solid 5px #6496c8;
+}
+section.border button:hover,
+section.border button.hover {
+  border-color: #346392;
+  color: #346392;
+}
+section.border button:active,
+section.border button.active {
+  border-color: #27496d;
+  color: #27496d;
+}
+a {
+  /*text-decoration: none;*/
+  /*color:black;*/
+}
+footer {
+  position:relative;
+  bottom:-120px;
+  background:#B0BEC5;
+  height:30px;
+}
+table {
+margin:0 auto;
+color: #333;
+font-family: Helvetica, Arial, sans-serif;
+width: 90%;
+border-collapse:
+collapse; border-spacing: 0;
+}
+
+td, th { border: 1px solid #CCC; height: 30px; }
+
+th {
+background: #CFD8DC;
+font-weight: bold;
+}
+
+td {
+background: #FAFAFA;
+text-align: center;
+}

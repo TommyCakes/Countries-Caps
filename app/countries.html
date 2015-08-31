@@ -1,0 +1,33 @@
+<!-- <li ng-repeat="c in app.data">
+<h4>Cities: {{c.countrycode}}</h4>
+</li> -->
+<div style="height:400px;overflow:auto;">
+<table  >
+  <tr>
+    <th>Name </th>
+    <th>Country Code</th>
+    <th>Capital</th>
+    <th>Area in km2</th>
+    <th>Population</th>
+    <th>Continent</th>
+  </tr>
+  <tr ng-repeat="c in app.data | orderBy:'name'"
+      ng-click="app.select(c)">
+
+    <td>{{c.countryName}}</td>
+    <td>{{c.countryCode}}</td>
+    <td>{{c.capital}}</td>
+    <td>{{c.areaInSqKm}}</td>
+    <td>{{c.population | number}}</td>
+    <td>{{c.continent}}</td>
+  </tr>
+</table>
+</div>
+<h2> Selected:{{app.selected.countryName}}</h2>
+
+<section class="border">
+  <button class="button" ng-click="app.getCountry()">
+<a href="#/">Back Home</a></button>
+<button class="button">
+  <a href="#/country/">Country</a></button>
+</section>
