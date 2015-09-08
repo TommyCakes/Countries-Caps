@@ -1,20 +1,27 @@
-<h1>
-{{ app.name}}</h1>
 
-<h3> Pop: {{ app.pop}}</h3>
+<section id="countryInfo">
+<h1 id="country"> {{app.selected.countryName}}<img id="flag"src="http://www.geonames.org/flags/x/{{app.selected.countryCode | lowercase}}.gif" /></h1>
+<br>
+<div class="info">
+<h3> Population of Country: <span>{{app.selected.population | number}}</span></h3>
+<h3>Area: <span>{{app.selected.areaInSqKm | number}} square km</span></h3>
+<h3>Capital: <span>{{app.selected.capital}}</span></h3>
+<h3>Population of Capital: <span>{{app.selected.population}}</span></h3>
+<h3>3 neighbors:
 
-<h3>Area:</h4>
+  <span ng-repeat="neighbour in app.selected.neighbours | limitTo: 3">
+  {{neighbour.countryName}},</span>
+</h3>
+<!-- <h2>{{app.selected.geonameId}}</h2> -->
+</div>
 
-<h3>Capital</h3>
-<h3>Pop of Capital</h3>
-<h3>3 neighbors</h3>
-
-
+<img id='map' src="http://www.geonames.org/img/country/250/{{app.selected.countryCode}}.png" />
+</section>
 <!-- <img  ng-repeat="c in app.data" src="http://www.geonames.org/flags/x/{{c.toponymName}}.gif" height="150px" width="200px"/>
 
 <img id='myImage' src="http://www.geonames.org/img/country/250/MX.png" /> -->
 
 <section class="border">
-  <button class="button" ng-click="app.getCountry()">
+  <button id="home" class="button" ng-click="app.getCountry()">
 <a href="#/">Back Home</a></button>
 </section>
